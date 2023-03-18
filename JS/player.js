@@ -109,6 +109,7 @@ function nextSong(index) {
                 document.querySelector('.song').remove();
                 player.classList.remove('next');
                 renderPlayer(currentMusic.songIndex);
+                document.getElementById('progress').max = document.getElementById('audio').duration;
             }, 500);
         })
         .catch(() => { })
@@ -143,6 +144,7 @@ function previousSong(index) {
                 document.querySelector('.song').remove();
                 player.classList.remove('previous');
                 renderPlayer(currentMusic.songIndex);
+                document.getElementById('progress').max = document.getElementById('audio').duration;
             }, 500);
         })
         .catch(() => { })

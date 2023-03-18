@@ -49,6 +49,7 @@ function activeSong() {
                 }
                 renderPlayer(currentMusic.songIndex);
                 addActiveSong(i, songList);
+                document.getElementById('progress').max = document.getElementById('audio').duration;
             }
         })
     }
