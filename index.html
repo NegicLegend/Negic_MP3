@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MP3 Player</title>
+        <link rel="icon" href="./IMG/logo.png" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="./CSS/style.css">
+
+        <!-- header CSS -->
+        <link rel="stylesheet" href="./CSS/header.css">
+        <!-- header CSS -->
+
+        <!-- body CSS -->
+        <link rel="stylesheet" href="./CSS/body/body.css">
+        <link rel="stylesheet" href="./CSS/body/player.css">
+        <link rel="stylesheet" href="./CSS/body/playlist.css">
+        <link rel="stylesheet" href="./CSS/body/collections.css">
+        <!-- body CSS -->
+
+        <!-- player CSS -->
+        <link rel="stylesheet" href="./CSS/player-control.css">
+        <link rel="stylesheet" href="./CSS/circle.css">
+        <!-- player CSS -->
+
+        <!-- responsive -->
+        <link rel="stylesheet" href="./CSS/responsive/horizontal.css">
+        <link rel="stylesheet" href="./CSS/responsive/vertical.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/responsive/big-horizontal.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/responsive/small-horizontal.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/responsive/small-vertical.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/responsive/big-vertical.css">
+        <!-- responsive -->
+
+        <!-- theme -->
+        <link rel="stylesheet" id="theme" href="./CSS/theme/dark.css">
+        <link rel="stylesheet" id="theme" href="./CSS/theme/theme.css">
+        <!-- theme -->
+
+        <!-- imports -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <!-- imports -->
+
+        <!-- Javascript -->
+        <script type="module" src="./JS/timeControl.js" defer></script>
+        <script type="module" src="./JS/player.js" defer></script>
+        <script type="module" src="./JS/volume.js" defer></script>
+        <script type="module" src="./JS/render.js" defer></script>
+        <script type="module" src="./JS/changeBody.js" defer></script>
+        <script type="module" src="./JS/playlist.js" defer></script>
+        <script type="module" src="./JS/collection.js" defer></script>
+        <script src="./JS/theme.js" defer></script>
+        <!-- Javascript -->
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+        <!-- fonts -->
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="btn-menu">
+                    <div class="arrow-wrap header-child">
+                        <div class="left-arrow arrow-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow arrow-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="player-btn header-child display-btn active">
+                        <i class="fa-solid fa-play"></i>
+                        <div class="display-description">Player</div>
+                    </div>
+                    <div class="playlist-btn header-child display-btn">
+                        <i class="fa-solid fa-list"></i>
+                        <div class="display-description">Play List</div>
+                    </div>
+                    <div class="folder-menu-btn header-child display-btn">
+                        <i class="fa-solid fa-folder"></i>
+                        <div class="display-description">Collections</div>
+                    </div>
+                </div>
+                <div class="volume-menu">
+                    <div class="volume-icon">
+                        <i class="fa-solid fa-volume-high high-volume active"></i>
+                        <i class="fa-solid fa-volume-low low-volume"></i>
+                        <i class="fa-solid fa-volume-off none-volume"></i>
+                    </div>
+                    <div class="volume">
+                        <input type="range" min="0" max="100" value="100">
+                        <progress min="0" max="100" value="100"></progress>
+                    </div>
+                </div>
+                <div class="theme">
+                    <i class="fa-solid fa-moon" id="dark"></i>
+                    <i class="fa-solid fa-sun" id="light"></i>
+                </div>
+            </div>
+            <div class="body">
+                <div class="player active body-child"></div>
+                <div class="playlist body-child"></div>
+                <div class="folder-menu body-child"></div>
+            </div>
+            <div class="circle-player-control active">
+                <div class="play-pause-btn ctrl-btn ctrl-play-pause">
+                    <i class="fa-solid fa-play play-icon"></i>
+                    <i class="fa-solid fa-pause pause-icon" style="display: none;"></i>
+                </div>
+                <div class="prev-btn ctrl-btn ctrl-previous">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="next-btn ctrl-btn ctrl-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+            <div class="player-control">
+                <i class="fa-sharp fa-solid fa-rotate-right loop-btn ctrl-btn ctrl-loop"></i>
+                <div class="song-control-wrap">
+                    <div class="song-info">
+                        <div class="type">Now playing:</div>
+                        <div class="name song-name"></div>
+                    </div>
+                    <div class="song-control">
+                        <div class="small-control">
+                            <i class="fa-solid fa-forward-step ctrl-next"></i>
+                            <i class="fa-solid fa-backward-step ctrl-previous"></i>
+                        </div>
+                        <div class="time-display">
+                            <div id="current-time"></div>
+                            <input id="progress" type="range" value="0" step="1" min="0" max="100">
+                        </div>
+                        <div class="small-control">
+                            <i class="fa-solid fa-play play-icon ctrl-play-pause"></i>
+                            <i class="fa-solid fa-pause pause-icon ctrl-play-pause" style="display: none;"></i>
+                            <i class="fa-sharp fa-solid fa-rotate-right ctrl-loop"></i>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <div class="type">Author:</div>
+                        <div class="name song-author"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio id="audio" src="./Music/Miku/1.mp3"></audio>
+    </body>
+</html>

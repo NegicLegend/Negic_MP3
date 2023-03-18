@@ -1,0 +1,194 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+@media (orientation: landscape) {
+    body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    /* Main *//* Main *//* Main *//* Main */
+
+    /* Header *//* Header *//* Header *//* Header */
+
+    .header {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+
+    .header .btn-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+
+    .header .header-child {
+        height: 100%;
+        width: 25%;
+    }
+
+    .header .arrow-btn {
+        height: 100%;
+    }
+
+    .header .arrow-wrap {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    .header .display-description {
+        min-width: 100%;
+        max-width: 1000%;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+                transform: translate(-50%);
+        top: 110%;
+        color: white;
+        z-index: 9999;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        cursor: default;
+    }
+
+    .header .display-btn:not(.active) i:hover~ .display-description {
+        opacity: 1;
+    }
+
+    .header .volume {
+        width: 70%;
+    }
+
+    .header .volume-menu {
+        position: relative;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-right: 5%;
+    }
+
+    .header .volume input {
+        width: 100%;
+    }
+
+    .header .volume-icon {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        height: 100%;
+    }
+
+    .header .theme {
+        height: 100%;
+        width: 5%;
+    }
+
+    /* Header *//* Header *//* Header *//* Header */
+
+    /* song control *//* song control *//* song control */
+
+    .song-control {
+        width: 50%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+    
+    .small-control {
+        display: none;
+    }
+    
+    .player-control.active .small-control {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .song-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .song-info div {
+        color: white;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        width: 98%;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .song-info .type {
+        font-weight: 600;
+    }
+
+    .song-info .name {
+        font-weight: 400;
+    }
+}

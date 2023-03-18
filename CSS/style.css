@@ -1,0 +1,41 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.pause-icon {
+    display: none;
+}
+
+.play-icon {
+    display: block;
+}
+
+.playing .pause-icon {
+    display: block !important;
+}
+
+.playing .play-icon {
+    display: none !important;
+}

@@ -1,0 +1,100 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+@media (orientation: portrait) {
+    body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    /* Main *//* Main *//* Main *//* Main */
+
+    /* Header *//* Header *//* Header *//* Header */
+
+    .header {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+
+    .header .btn-menu {
+        height: 100%;
+        width: 75%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+
+    .header .header-child {
+        height: 100%;
+        width: calc(100% / 3);
+    }
+
+    .header .arrow-wrap {
+        display: none !important;
+    }
+
+    .header .display-description {
+        display: none !important;
+    }
+
+    .header .volume-menu {
+        display: none !important;
+    }
+
+    .theme {
+        width: 25%;
+        height: 100%;
+    }
+
+    /* Header *//* Header *//* Header *//* Header */
+
+    /* song control *//* song control *//* song control */
+
+    .song-control {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+    
+    .small-control {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .song-info {
+        display: none !important;
+    }
+}

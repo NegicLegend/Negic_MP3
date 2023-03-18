@@ -1,0 +1,53 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+body {
+    background-color: #232c58;
+}
+
+.player .song.active .details {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.header,
+.player-control,
+.circle-player-control {
+    background-color: #161b37;
+}
+
+.playlist .song-wrap {
+    background-color: black;
+}
+
+.playlist .song-wrap::after,
+.playlist .song-wrap.active span {
+    background-color: #00408a;
+}
+
+.playlist .song-infomation {
+    color: white;
+}
+
+.folder-menu .playlist-element {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.folder-menu .playlist-element:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.folder-menu .playlist-element.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#dark {
+    display: block !important;
+}
+
+#light {
+    display: none !important;
+}

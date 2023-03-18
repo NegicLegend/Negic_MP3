@@ -1,0 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+body,
+.player,
+.header,
+.player-control,
+.playlist .song-wrap,
+.circle-player-control,
+.playlist .song-infomation,
+.playlist .song-wrap::after,
+.folder-menu .playlist-element,
+.playlist .song-wrap.active span,
+.folder-menu .playlist-element:hover,
+.folder-menu .playlist-element.active {
+    -webkit-transition: background-color 0.2s, color 0.2s;
+    -o-transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.playlist .song-wrap:not(.active) {
+    -webkit-transition: border 0.2s;
+    -o-transition: border 0.2s;
+    transition: border 0.2s;
+}

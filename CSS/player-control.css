@@ -1,0 +1,123 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+.player-control {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+
+.ctrl-btn {
+    opacity: 1;
+    -webkit-transition: opacity 0.15s;
+    -o-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+}
+
+@media (hover: hover) {
+    .ctrl-btn:hover {
+        opacity: 0.8;
+    }   
+}
+
+.song-control-wrap {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+}
+
+/* main *//* main *//* main *//* main */
+
+/* loop *//* loop *//* loop *//* loop */
+
+.loop-btn {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.player-control.active .loop-btn {
+    display: none;
+}
+
+.ctrl-loop.active {
+    color: #0075ff !important;
+}
+
+/* loop *//* loop *//* loop *//* loop */
+
+/* song control *//* song control *//* song control */
+
+#current-time {
+    color: white;
+    font-weight: 400;
+    font-family: 'Tilt Warp', cursive;
+    letter-spacing: 2px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.time-display {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+
+#progress {
+    width: 90%;
+    cursor: pointer;
+    background-color: #0075ff;
+    text-align: center;
+}
+
+/* time */
+
+/* small control */
+
+.small-control {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.small-control i {
+    color: white;
+    cursor: pointer;
+}
+
+/* song control *//* song control *//* song control */

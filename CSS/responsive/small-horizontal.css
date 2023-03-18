@@ -1,0 +1,433 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+@media (orientation: landscape) and (max-aspect-ratio: 16/9) {
+    .header {
+        height: 10vh;
+    }
+
+    .header .btn-menu {
+        height: 100%;
+        width: 50%;
+    }
+
+    .header i {
+        font-size: 2.3vh;
+    }
+
+    .header .btn-menu i,
+    .header .theme i {
+        padding: 1.6vh;
+    }
+
+    .header .display-btn.active {
+        top: 3vh;
+    }
+
+    .header .display-btn.active i {
+        padding: 1vh 2vh;
+        font-size: 3.5vh;
+    }
+
+    .header .display-description {
+        font-size: 2.5vh;
+    }
+
+    .header .volume-menu {
+        width: 40%;
+    }
+
+    .header .volume progress,
+    .header .volume input::-webkit-slider-thumb,
+    .header .volume input,
+    .header .volume {
+        height: 2vh;
+    }
+
+    .header .volume input::-webkit-slider-thumb {
+        width: 2vh;
+    }
+
+    .header .volume progress {
+        border-radius: 2vh;
+    }
+
+    .header .volume progress::-webkit-progress-value {
+        border-radius: 1vh;
+    }
+
+    .header .volume-icon {
+        right: 85%;
+    }
+
+    /* Header *//* Header *//* Header *//* Header */
+
+    /* Player *//* Player *//* Player *//* Player */
+    
+    .player .song {
+        border-radius: 1.5vw;
+    }
+
+    .player .song:nth-child(1) {
+        top: 85%;
+        right: 110vw;
+        width: 25vw;
+    }
+    
+    .player .song:nth-child(2) {
+        top: 65%;
+        right: 83vw;
+        width: 25vw;
+    }
+    
+    .player .song:nth-child(3) {
+        top: 30%;
+        right: 71vw;
+        width: 25vw;
+    }
+    
+    .player .song:nth-child(4) {
+        top: 5%;
+        right: 32vw;
+        width: 36vw;
+    }
+    
+    .player .song:nth-child(5) {
+        top: 30%;
+        right: 4vw;
+        width: 25vw;
+    }
+    
+    .player .song:nth-child(6) {
+        top: 65%;
+        right: -8vw;
+        width: 25vw;
+    }
+    
+    .player .song:nth-child(7) {
+        top: 85%;
+        right: -35vw;
+        width: 25vw;
+    }
+
+    .player .song.active {
+        top: 5%;
+        right: 32vw;
+        width: 36vw;
+    }
+
+    .player .thumbnail {
+        height: calc(25vw / 16 * 9);
+        border-top-right-radius: 1.5vw;
+        border-top-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+
+    .player .thumbnail-ctrl div {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .player .song.active .thumbnail {
+        height: calc(36vw / 16 * 9);
+    }
+
+    .player .thumbnail-ctrl div i {
+        font-size: 2.5vw;
+    }
+
+    .player .details {
+        border-bottom-right-radius: 1.5vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+
+    .player .song.active .details {
+        top: calc(36vw / 16 * 9);
+        height: calc(36vw / 16 * 9 * 3 / 10);
+    }
+
+    .player .song-name {
+        font-size: 2vh;
+    }
+
+    .player .song-singer {
+        margin-top: 0.3vh;
+        font-size: 2.2vh;
+    }
+
+    /* transition */
+    .player.next .song:nth-child(2) {
+        top: 85%;
+        right: 110vw;
+        width: 25vw;
+    }
+    
+    .player.next .song:nth-child(3) {
+        top: 65%;
+        right: 83vw;
+        width: 25vw;
+    }
+    
+    .player.next .song:nth-child(4) {
+        top: 30%;
+        right: 71vw;
+        width: 25vw;
+    }
+    
+    .player.next .song:nth-child(5) {
+        top: 5%;
+        right: 32vw;
+        width: 36vw;
+    }
+    
+    .player.next .song:nth-child(6) {
+        top: 30%;
+        right: 4vw;
+        width: 25vw;
+    }
+    
+    .player.next .song:nth-child(7) {
+        top: 65%;
+        right: -8vw;
+        width: 25vw;
+    }
+    
+    /* next */
+    
+    /* previous */
+    
+    .player.previous .song:nth-child(1) {
+        top: 65%;
+        right: 83vw;
+        width: 25vw;
+    }
+    
+    .player.previous .song:nth-child(2) {
+        top: 30%;
+        right: 71vw;
+        width: 25vw;
+    }
+    
+    .player.previous .song:nth-child(3) {
+        top: 5%;
+        right: 32vw;
+        width: 36vw;
+    }
+    
+    .player.previous .song:nth-child(4) {
+        top: 30%;
+        right: 4vw;
+        width: 25vw;
+    }
+    
+    .player.previous .song:nth-child(5) {
+        top: 65%;
+        right: -8vw;
+        width: 25vw;
+    }
+    
+    .player.previous .song:nth-child(6) {
+        top: 85%;
+        right: -35vw;
+        width: 25vw;
+    }
+
+    /* Player *//* Player *//* Player *//* Player */
+
+    /* Playlist *//* Playlist *//* Playlist *//* Playlist */
+
+    .playlist {
+        padding: 2vh 0;
+    }
+
+    .playlist .song-wrap {
+        height: 12vh;
+        border-radius: 2.5vh;
+        margin: 1vh 0;
+        width: 90%;
+    }
+
+    .playlist .song-wrap:hover::after {
+        width: 200vw;
+        height: 200vw;
+    }
+
+    .playlist .song-wrap span {
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+        padding: 1vh;
+        border-radius: 2.5vh;
+    }
+
+    .playlist .song-thumbnail {
+        height: 10vh;
+        width: calc(10vh / 9 * 16);
+        border-radius: 1vh;
+        margin-right: 1vw;
+    }
+
+    .playlist .song-name {
+        width: 55vw;
+        font-size: 2.6vh;
+    }
+
+    .playlist .song-author {
+        width: 55vw;
+        font-size: 3.2vh;
+    }
+
+    .playlist .song-wrap i {
+        font-size: 5vh;
+        margin: 0 2vw;
+    }
+
+    /* Playlist *//* Playlist *//* Playlist *//* Playlist */
+
+    /* Collections *//* Collections *//* Collections *//* Collections */
+
+    .folder-menu {
+        padding: 2vh 0;
+    }
+
+    .folder-menu .playlist-wrap {
+        width: calc(100% / 3);
+        border-radius: 2vw;
+        margin: 2vw 0;
+    }
+
+    .folder-menu .playlist-element {
+        width: 25vw;
+        padding: 2vw 0;
+        border-radius: 2vw;
+    }
+
+    .folder-menu .playlist-thumbnail {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 2vw;
+    }
+
+    .folder-menu .playlist-name {
+        font-size: 2.7vw;
+        margin-top: 1vw;
+    }
+
+    .folder-menu .playlist-icon-wrap i {
+        font-size: 2vw;
+    }
+
+    /* Collections *//* Collections *//* Collections *//* Collections */
+
+    /* Circle *//* Circle *//* Circle *//* Circle */
+
+    .circle-player-control {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .circle-player-control.active {
+        top: 75%;
+    }
+
+    .play-pause-btn {
+        top: 2%;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .play-pause-btn i {
+        font-size: 2.5vw;
+    }
+
+    .prev-btn,
+    .next-btn {
+        top: 10%;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .prev-btn {
+        left: 25%;
+    }
+    
+    .next-btn {
+        right: 25%;
+    }
+    
+    .prev-btn i,
+    .next-btn i {
+        font-size: 2vw;
+    }
+
+    /* Circle *//* Circle *//* Circle *//* Circle */
+
+    /* Control *//* Control *//* Control *//* Control */
+
+    .player-control {
+        height: 15vh;
+    }
+
+    .loop-btn {
+        bottom: 95%;
+        font-size: 2vw;
+    }
+
+    #current-time {
+        font-size: 2vw;
+    }
+
+    .time-display {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -3vh;
+        padding-top: 0;
+    }
+
+    .player-control.active .time-display {
+        width: 90%;
+    }
+
+    #progress {
+        margin-top: 1vh;
+        height: 6px;
+        border-radius: 3px;
+    }
+
+    .small-control {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 5%;
+        position: relative;
+        top: -2vh;
+    }
+
+    .small-control i {
+        font-size: 2vw;
+    }
+
+    .small-control i {
+        margin: 0.5vh 0;
+    }
+
+    .song-info {
+        position: relative;
+        top: -2.5vh;
+        width: 25%;
+    }
+
+    .song-info .type {
+        font-size: 1.5vw;
+    }
+
+    .song-info .name {
+        font-size: 1.2vw;
+        padding-top: 0.6vh;
+    }
+}

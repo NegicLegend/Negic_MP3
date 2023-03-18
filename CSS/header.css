@@ -1,0 +1,157 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+.header {
+    z-index: 999;
+}
+
+.header .btn-menu {
+    position: relative;
+}
+
+.header .header-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.header i {
+    color: white;
+    position: relative;
+}
+
+@media (hover: hover) {
+    .header .arrow-btn i:hover,
+    .header .theme i:hover,
+    .header .display-btn:not(.active) i:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+}
+
+/* main *//* main *//* main *//* main */
+
+/* buttons *//* buttons *//* buttons *//* buttons */
+
+.header .arrow-btn {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.header .arrow-btn i {
+    border-radius: 50%;
+}
+
+/* arrow */
+
+/* display buttons */
+
+.header .display-btn {
+    position: relative;
+    -webkit-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    transition: top 0.2s;
+    z-index: 999;
+}
+
+.header .display-btn.active i {
+    background-color: #0075ff;
+}
+
+.header .display-btn i {
+    border-radius: 10%;
+}
+
+/* buttons *//* buttons *//* buttons *//* buttons */
+
+/* volume *//* volume *//* volume *//* volume */
+
+.header .volume {
+    position: relative;
+}
+
+.header .volume input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.header .volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .volume progress {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.header .volume progress::-webkit-progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header .volume progress::-webkit-progress-value {
+    background-color: #0075ff;
+}
+
+.header .volume-icon i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.header .volume-icon i {
+    opacity: 0;
+    z-index: 1;
+}
+
+.header .volume-icon i.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+/* volume *//* volume *//* volume *//* volume */
+
+/* theme *//* theme *//* theme *//* theme */
+
+.header .theme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.header .theme i {
+    border-radius: 10%;
+}
