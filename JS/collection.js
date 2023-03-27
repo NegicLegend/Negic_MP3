@@ -7,16 +7,14 @@ import { renderPlaylist, musicLists } from './render.js';
 export let waveInterval;
 
 function musicWave() {
-    if (currentMusic.isPlaying) {
-        waveInterval = setInterval(() => {
+    waveInterval = setInterval(() => {
+        if (currentMusic.isPlaying) {
             const musicLines = document.querySelector('.playlist-element.active').querySelectorAll('.music-line');
             for (let i = 0; i < musicLines.length; i++) {
                 musicLines[i].style.height = `${Math.random() * 20}%`
             }
-        }, 200)
-    } else {
-        clearInterval(waveInterval);
-    }
+        }
+    }, 200)
 }
 
 function activePlaylist() {
@@ -36,7 +34,9 @@ function activePlaylist() {
                         }
                     }
                 } else {
-                    clearInterval(waveInterval);
+                    if(typeof(waveInterval) == 'number') {
+                        clearInterval(waveInterval);
+                    }
                     for (let y = 0; y < document.querySelectorAll('.music-line').length; y++) {
                         document.querySelectorAll('.music-line')[y].style.height = 0;
                     }
@@ -58,6 +58,7 @@ function activePlaylist() {
                     playPause();
                     playlistList[i].querySelector('.playlist-play-icon').style.display = 'none';
                     playlistList[i].querySelector('.playlist-pause-icon').style.display = 'block';
+                    musicWave();
                 }
             })
         })(i)

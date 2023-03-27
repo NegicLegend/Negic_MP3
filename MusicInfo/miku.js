@@ -1,7 +1,7 @@
 const MikuList = [
     {
         index: 1,
-        name: 'Senbonzakura',
+        name: 'The Snow White Princess',
         author: 'Hatsune Miku',
         image: './IMG/Miku/1.jpg',
         path: './Music/Miku/1.mp3'
@@ -15,7 +15,7 @@ const MikuList = [
     },
     {
         index: 3,
-        name: 'The Snow White Princess',
+        name: 'Senbonzakura',
         author: 'Hatsune Miku',
         image: './IMG/Miku/3.jpg',
         path: './Music/Miku/3.mp3'

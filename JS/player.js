@@ -3,8 +3,8 @@
 import { renderPlayer, renderCollection } from './render.js';
 import { displayCurrentTime } from './timeControl.js';
 import { addActiveSong } from './playlist.js';
-import { musicWave } from './collection.js';
 import MikuList from '../MusicInfo/miku.js';
+import { waveInterval, musicWave } from './collection.js';
 import { addActive, removeActive, createNewSong, changeMusic } from './functions.js';
 
 export const currentMusic = {
@@ -57,6 +57,9 @@ function checkPlaying() {
             document.querySelector('.playlist-element.active').querySelector('.playlist-pause-icon').style = 'display: block;';
             document.querySelector('.song-wrap.active').querySelector('.song-play-icon').style = 'display: none;';
             document.querySelector('.song-wrap.active').querySelector('.song-pause-icon').style = 'display: block;';
+            if(typeof(waveInterval) != 'number') {
+                musicWave();
+            }
         }
     } else {
         if (wrapper.classList.contains('playing')) {
@@ -68,7 +71,6 @@ function checkPlaying() {
             document.querySelector('.song-wrap.active').querySelector('.song-pause-icon').style = 'display: none;';
         }
     }
-    musicWave();
 }
 
 function playPause() {
