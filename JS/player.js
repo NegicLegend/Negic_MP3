@@ -77,14 +77,22 @@ function playPause() {
     currentMusic.isPlaying = !currentMusic.isPlaying;
     if (currentMusic.isPlaying) {
         audio.play();
-        checkPlaying();
-        updateTime();
     } else {
         audio.pause();
-        checkPlaying();
-        clearInterval(loadCurrentTime);
     }
 }
+
+audio.addEventListener('play', ()=> {
+    currentMusic.isPlaying = true;
+    checkPlaying();
+    updateTime();
+})
+
+audio.addEventListener('pause', ()=> {
+    currentMusic.isPlaying = false;
+    checkPlaying();
+    clearInterval(loadCurrentTime);
+})
 
 function nextSong(index) {
     var promise = new Promise(
@@ -251,6 +259,15 @@ function songEnd() {
 function resetProgess() {
     document.getElementById('progress').value = 0;
 }
+
+window.addEventListener("keydown", (e) => {
+    console.log(e)
+    if(e.which === 177) {
+        handlePreviousSong();
+    }else if(e.which === 176) {
+        handleNextSong();
+    }
+})
 
 for (let i = 0; i < document.querySelectorAll('.ctrl-play-pause').length; i++) {
     (function (i) {
