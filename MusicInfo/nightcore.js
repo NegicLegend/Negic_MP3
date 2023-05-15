@@ -97,6 +97,13 @@ const NightcoreList = [
         image: './IMG/Nightcore/14.jpg',
         path: './Music/Nightcore/14.mp3'
     },
+    {
+        index: 15,
+        name: 'Nightcore - Cupid',
+        author: 'FIFTY FIFTY',
+        image: './IMG/Nightcore/15.jpg',
+        path: './Music/Nightcore/15.mp3'
+    },
 ];
 
 export default NightcoreList;
