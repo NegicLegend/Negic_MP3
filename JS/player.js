@@ -12,7 +12,7 @@ export const currentMusic = {
     listIndex: 0,
     currentList: MikuList,
     isPlaying: false,
-    isLoping: false,
+    isLooping: false,
     isChanged: false
 }
 
@@ -245,13 +245,11 @@ function songEnd() {
     audio.addEventListener('ended', () => {
         songs = document.querySelectorAll('.song');
         clearInterval(loadCurrentTime);
-        if (currentMusic.isPlaying) {
-            if (currentMusic.isLoping) {
-                audio.play();
-                updateTime();
-            } else {
-                document.querySelectorAll('.thumbnail')[4].click();
-            }
+        if (currentMusic.isLooping) {
+            audio.play();
+            updateTime();
+        } else {
+            document.querySelectorAll('.thumbnail')[4].click();
         }
     })
 }
@@ -296,8 +294,8 @@ for (let i = 0; i < document.querySelectorAll('.ctrl-previous').length; i++) {
 for (let i = 0; i < document.querySelectorAll('.ctrl-loop').length; i++) {
     (function (i) {
         document.querySelectorAll('.ctrl-loop')[i].addEventListener('click', () => {
-            currentMusic.isLoping = !currentMusic.isLoping;
-            if (currentMusic.isLoping) {
+            currentMusic.isLooping = !currentMusic.isLooping;
+            if (currentMusic.isLooping) {
                 for (let y = 0; y < document.querySelectorAll('.ctrl-loop').length; y++) {
                     document.querySelectorAll('.ctrl-loop')[y].classList.add('active');
                 }
